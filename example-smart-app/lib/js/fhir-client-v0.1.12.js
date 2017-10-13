@@ -17424,7 +17424,7 @@ BBClient.authorize = function(params, errback){
        redirect_to += "&launch="+encodeURIComponent(client.launch);
     }
      
- //   alert("https://tzeoli.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html?iss=" + params.provider.oauth2.authorize_uri + "launch=" + client.launch);	
+    alert("https://tzeoli.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html?iss=" + params.provider.oauth2.authorize_uri + "launch=" + client.launch);	
 	
 //	https://tzeoli.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html?iss=https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca&launch=4342012
 	
