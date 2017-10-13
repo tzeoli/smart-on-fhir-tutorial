@@ -86,6 +86,7 @@
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
           drawVisualization(p);
+          alert(redirect_to);
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed
