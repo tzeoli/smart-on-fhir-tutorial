@@ -17424,7 +17424,7 @@ BBClient.authorize = function(params, errback){
        redirect_to += "&launch="+encodeURIComponent(client.launch);
     }
      
- //   alert(redirect_to);	
+    alert("https://tzeoli.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html?iss=" + params.provider.oauth2.authorize_uri + "launch=" + client.launch);	
 	
     window.location.href = redirect_to;
   }, errback);
