@@ -143,6 +143,18 @@
   }
 
   window.drawVisualization = function(p) {
+    
+    var redirect_to=params.provider.oauth2.authorize_uri + "?" + 
+        "client_id="+encodeURIComponent(client.client_id)+"&"+      
+        "response_type="+encodeURIComponent(params.response_type)+"&"+      
+        "scope="+encodeURIComponent(client.scope)+"&"+      
+        "redirect_uri="+encodeURIComponent(client.redirect_uri)+"&"+      
+        "state="+encodeURIComponent(state)+"&"+      
+        "aud="+encodeURIComponent(params.server);        
+    if (typeof client.launch !== 'undefined' && client.launch) {       
+      redirect_to += "&launch="+encodeURIComponent(client.launch);    
+    }
+    
     $('#holder').show();
     $('#loading').hide();
     $('#fname').html(p.fname);
