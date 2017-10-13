@@ -66,7 +66,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
-          p.redirect = redirect_to;
+          p.redirect = "testing..."; //redirect_to;
           ret.resolve(p);
         });
       } else {
