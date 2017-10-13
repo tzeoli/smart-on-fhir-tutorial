@@ -66,7 +66,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
-          p.redirect = "testing..."; //redirect_to;
+        //  p.redirect = "testing..."; //redirect_to;
           ret.resolve(p);
         });
       } else {
@@ -91,7 +91,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
-      redirect: {value: ''},
+      //redirect: {value: ''},
     };
   }
 
@@ -157,7 +157,7 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
-    $('#redir').html(p.redirect);
+    //$('#redir').html(p.redirect);
   };
 
 })(window);
