@@ -91,7 +91,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
-      redirect: {value: ''}
+      redirect: {value: ''},
     };
   }
 
